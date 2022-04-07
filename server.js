@@ -18,3 +18,4 @@ app.use(express.static("./dist/e-commerce-angular"));
 app.get("/*", (req, res) =>
   res.sendFile("index.html", { root: "dist/e-commerce-angular" })
 );
+app.listen(process.env.PORT || 8080);
